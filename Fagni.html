@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sodiesco | Expert Installation Solaire - Économisez jusqu'à 70%</title>
+    <meta name="description" content="Sodiesco, expert en installation de panneaux solaires. Solutions sur mesure, financement adapté, garantie 30 ans. Plusieurs clients satisfaits.">
+    <meta name="keywords" content="panneaux solaires, installation photovoltaïque, énergie renouvelable, autoconsommation">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">SODIESCO SARL</div>
+    </div>
+
+    <!-- Progress Scroll -->
+    <div class="progress-scroll" id="progressScroll"></div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#accueil" class="logo">
+                    <div class="logo-ico">
+                       <img src="logo.png" alt="notre logo" style="height: 50px;">
+                    </div>
+                    <div class="logo-text">
+                        SODIESCO
+                        <span>Société des Installations Electriques et Solaires du Congo <br> Énergie durable</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link active"><i class="fas fa-home"></i>Accueil</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fas fa-solar-panel"></i>Services</a></li>
+                    <li><a href="#tarifs" class="nav-link"><i class="fas fa-euro-sign"></i>Tarifs</a></li>
+                    <li><a href="#galerie" class="nav-link"><i class="fas fa-images"></i>Réalisations</a></li>
+                    <li><a href="#apropos" class="nav-link"><i class="fas fa-info-circle"></i>À Propos</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-phone"></i>Contact</a></li>
+                </ul>
+
+                <div class="theme-toggle-wrapper">
+                    <i class="fas fa-sun theme-icon" id="sunIcon"></i>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème"></button>
+                    <i class="fas fa-moon theme-icon" id="moonIcon"></i>
+                </div>
+
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="theme-toggle-wrapper">
+                <i class="fas fa-sun theme-icon" id="mobileSunIcon"></i>
+                <button class="theme-toggle" id="mobileThemeToggle"></button>
+                <i class="fas fa-moon theme-icon" id="mobileMoonIcon"></i>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-nav">
+            <li><a href="#accueil" class="active"><i class="fas fa-home"></i>Accueil</a></li>
+            <li><a href="#services"><i class="fas fa-solar-panel"></i>Services</a></li>
+            <li><a href="#tarifs"><i class="fas fa-euro-sign"></i>Tarifs</a></li>
+            <li><a href="#galerie"><i class="fas fa-images"></i>Réalisations</a></li>
+            <li><a href="#apropos"><i class="fas fa-info-circle"></i>À Propos</a></li>
+            <li><a href="#contact"><i class="fas fa-phone"></i>Contact</a></li>
+        </ul>
+
+        <div style="padding: 20px;">
+            <a href="#contact" class="btn btn-primary" style="width: 100%; margin-bottom: 15px;">
+                <i class="fas fa-calendar-check"></i>
+                Demander un devis
+            </a>
+            <a href="tel:+33123456789" class="btn btn-outline" style="width: 100%;">
+                <i class="fas fa-phone"></i>
+                01 23 45 67 89
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg" id="heroParticles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Votre satisfaction<br>
+                    <span style="background: linear-gradient(135deg, #FF6B35, #10B981); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        C'est notre devoir
+                    </span>
+                </h1>
+                <p class="hero-subtitle">
+                    SODIESCO transforme votre toit en source de revenus. Installation professionnelle, 
+                    accompagnement sur mesure et économies garanties. Rejoignez les  500 foyers 
+                    qui produisent déjà leur propre électricité.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Installations</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Ans Garantie</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="70">0</span>
+                        <span class="stat-label">% d'économie</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                   
+                    <a href="#tarifs" class="btn btn-outline">
+                        <i class="fas fa-eye"></i>
+                        Voir nos solutions
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                         alt="Installation panneaux solaires moderne"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Expertise Solaire Complète</h2>
+                <p class="section-subtitle animate-on-scroll">Des solutions adaptées à chaque projet</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Résidentiel</h3>
+                    <p>
+                        Installation clé en main pour particuliers avec étude personnalisée, 
+                        gestion des aides et accompagnement complet. Retour sur investissement 
+                        garanti en moins de 8 ans.
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-arrow-right"></i>
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Professionnel</h3>
+                    <p>
+                        Solutions pour entreprises avec analyse ROI détaillée, financement adapté 
+                        et monitoring intelligent. Réduction jusqu'à 60% de votre facture énergétique.
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-arrow-right"></i>
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Industriel</h3>
+                    <p>
+                        Installations à grande échelle pour sites industriels avec garanties étendues, 
+                        maintenance préventive et optimisation continue des performances.
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-arrow-right"></i>
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Horizontale -->
+    <section class="galerie-horizontale" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Nos Réalisations</h2>
+                <p class="section-subtitle animate-on-scroll">Parcourez nos installations à travers la France</p>
+            </div>
+            
+            <div class="galerie-container">
+                <div class="galerie-track">
+                    <!-- Duplication des éléments pour effet infini -->
+                    <div class="galerie-item">
+                        <img src="mvuama.jpg" 
+                             alt="Maison contemporaine Paris"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Toujours dans le boulot</h4>
+                            <p>Une installation à limeté</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="boss.jpg" 
+                             alt="Immeuble Lyon"
+                            >
+                        <div class="galerie-overlay">
+                            <h4>Notre logo, notre crédo</h4>
+                            <p>une image de marque</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="equipe.jpg" 
+                             alt="Ferme Bordeaux"
+                        >
+                        <div class="galerie-overlay">
+                            <h4>La grande equipe</h4>
+                            <p>Ceux avec qui nous formons des rêves</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="mukolo.jpg" 
+                             alt="Technicien intervention"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Nous voulont votre joie</h4>
+                            <p>Nous sérons là a tout moment</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item">
+                        <img src="mvuama.jpg" 
+                             alt="Maison contemporaine Paris"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Toujours dans le boulot</h4>
+                            <p>Une installation à limeté</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="boss.jpg" 
+                             alt="Immeuble Lyon"
+                            >
+                        <div class="galerie-overlay">
+                            <h4>Notre logo, notre crédo</h4>
+                            <p>une image de marque</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="equipe.jpg" 
+                             alt="Ferme Bordeaux"
+                        >
+                        <div class="galerie-overlay">
+                            <h4>La grande equipe</h4>
+                            <p>Ceux avec qui nous formons des rêves</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="mukolo.jpg" 
+                             alt="Technicien intervention"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Nous voulont votre joie</h4>
+                            <p>Nous sérons là a tout moment</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item">
+                        <img src="mvuama.jpg" 
+                             alt="Maison contemporaine Paris"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Toujours dans le boulot</h4>
+                            <p>Une installation à limeté</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="boss.jpg" 
+                             alt="Immeuble Lyon"
+                            >
+                        <div class="galerie-overlay">
+                            <h4>Notre logo, notre crédo</h4>
+                            <p>une image de marque</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="equipe.jpg" 
+                             alt="Ferme Bordeaux"
+                        >
+                        <div class="galerie-overlay">
+                            <h4>La grande equipe</h4>
+                            <p>Ceux avec qui nous formons des rêves</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="mukolo.jpg" 
+                             alt="Technicien intervention"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Nous voulont votre joie</h4>
+                            <p>Nous sérons là a tout moment</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item">
+                        <img src="mvuama.jpg" 
+                             alt="Maison contemporaine Paris"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Toujours dans le boulot</h4>
+                            <p>Une installation à limeté</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="boss.jpg" 
+                             alt="Immeuble Lyon"
+                            >
+                        <div class="galerie-overlay">
+                            <h4>Notre logo, notre crédo</h4>
+                            <p>une image de marque</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="equipe.jpg" 
+                             alt="Ferme Bordeaux"
+                        >
+                        <div class="galerie-overlay">
+                            <h4>La grande equipe</h4>
+                            <p>Ceux avec qui nous formons des rêves</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="mukolo.jpg" 
+                             alt="Technicien intervention"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Nous voulont votre joie</h4>
+                            <p>Nous sérons là a tout moment</p>
+                        </div>
+                    </div>
+                    <div class="galerie-item">
+                        <img src="mvuama.jpg" 
+                             alt="Maison contemporaine Paris"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Toujours dans le boulot</h4>
+                            <p>Une installation à limeté</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="boss.jpg" 
+                             alt="Immeuble Lyon"
+                            >
+                        <div class="galerie-overlay">
+                            <h4>Notre logo, notre crédo</h4>
+                            <p>une image de marque</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="equipe.jpg" 
+                             alt="Ferme Bordeaux"
+                        >
+                        <div class="galerie-overlay">
+                            <h4>La grande equipe</h4>
+                            <p>Ceux avec qui nous formons des rêves</p>
+                        </div>
+                    </div>
+                    
+                    <div class="galerie-item">
+                        <img src="mukolo.jpg" 
+                             alt="Technicien intervention"
+                             >
+                        <div class="galerie-overlay">
+                            <h4>Nous voulont votre joie</h4>
+                            <p>Nous sérons là a tout moment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs Section -->
+    <section class="tarifs" id="tarifs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Solutions Tarifaires, Nos kits</h2>
+                <p class="section-subtitle animate-on-scroll">Choisissez la formule adaptée à vos besoins</p>
+            </div>
+            
+            <div class="tarifs-grid">
+                <div class="tarif-card animate-on-scroll">
+                    <div class="tarif-header">
+                        <h3>Kit basic A</h3>
+                        <div class="tarif-price">
+                            <span class="amount">250 $</span>
+                            <span class="note">Notre prémier kit solaire</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                        <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> TV de 32"</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                            <i class="fas fa-file-alt"></i>
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+                <div class="tarif-card animate-on-scroll">
+                    <div class="tarif-header">
+                        <h3>Kit basic B</h3>
+                        <div class="tarif-price">
+                            <span class="amount">380 $</span>
+                            <span class="note">Notre deuxieme kit solaire</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                        <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> Mini frigo</li>
+                        <li><i class="fas fa-check"></i> TV 43"</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                        <li><i class="fas fa-check"></i> Charge téléphone</li>
+    
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                            <i class="fas fa-file-alt"></i>
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+                <div class="tarif-card animate-on-scroll">
+                    <div class="tarif-header">
+                        <h3>Kit basic C</h3>
+                        <div class="tarif-price">
+                            <span class="amount">410 $</span>
+                            <span class="note">Notre troiseme kit solaire</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                        <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> Congélateur</li>
+                        <li><i class="fas fa-check"></i> TV de 32" à 43"</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                        <li><i class="fas fa-check"></i> Charge téléphone</li>
+    
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                            <i class="fas fa-file-alt"></i>
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+                <div class="tarif-card animate-on-scroll">
+                    <div class="tarif-header">
+                        <h3>Kit basic D</h3>
+                        <div class="tarif-price">
+                            <span class="amount">550 $</span>
+                            <span class="note">Notre prémier kit solaire</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                        <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> Congélateur 120L à 150l</li>
+                        <li><i class="fas fa-check"></i> Radio</li>
+                        <li><i class="fas fa-check"></i> TV de 32" à 45"</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                        <li><i class="fas fa-check"></i> Charge téléphone</li>
+                         <li><i class="fas fa-check"></i> Ordinateur </li>
+    
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                            <i class="fas fa-file-alt"></i>
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tarif-card featured animate-on-scroll">
+                    <div class="badge-popular"></div>
+                    <div class="tarif-header">
+                        <h3>Kit Medium A</h3>
+                        <div class="tarif-price">
+                            <span class="amount">750 $</span>
+                            <span class="note">Le kit de deuxieme niveau</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                        <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> Congélateur 200l</li>
+                        <li><i class="fas fa-check"></i> Radio</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                        <li><i class="fas fa-check"></i>  TV de 32" à 58"</li>
+                        <li><i class="fas fa-check"></i> Charge téléphone</li>
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-bolt"></i>
+                            Choisir cette solution
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tarif-card featured animate-on-scroll">
+                    <div class="badge-popular"></div>
+                    <div class="tarif-header">
+                        <h3>Kit Medium B</h3>
+                        <div class="tarif-price">
+                            <span class="amount">1300 $</span>
+                            <span class="note">Le kit de deuxieme niveau</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                        <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> Congélateur 250l à 300l</li>
+                        <li><i class="fas fa-check"></i> Radio</li>
+                         <li><i class="fas fa-check"></i> Ordinateur</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                        <li><i class="fas fa-check"></i>  TV de 50" à 8O"</li>
+                        <li><i class="fas fa-check"></i> Charge téléphone</li>
+                        <li><i class="fas fa-check"></i> Linge singer</li>
+
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-bolt"></i>
+                            Choisir cette solution
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tarif-card animate-on-scroll">
+                    <div class="tarif-header">
+                        <h3>Premuim Alpha</h3>
+                        <div class="tarif-price">
+                            <span class="amount">2 600$</span>
+                            <span class="note">Après aides de l'État</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                        <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> Congélateur  300L à 350L</li>
+                        <li><i class="fas fa-check"></i> Radio</li>
+                        <li><i class="fas fa-check"></i> Ordinateur</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                        <li><i class="fas fa-check"></i>  TV de 50" à 80"</li>
+                        <li><i class="fas fa-check"></i> Charge téléphone</li>
+                        <li><i class="fas fa-check"></i> Linge singer</li>
+                        <li><i class="fas fa-check"></i> Fer a répasser</li>
+
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#contact" class="btn btn-outline" style="width: 100%;">
+                            <i class="fas fa-crown"></i>
+                            Opter pour le premium
+                        </a>
+                    </div>
+                </div>
+                <div class="tarif-card animate-on-scroll">
+                    <div class="tarif-header">
+                        <h3>Premuim Omega</h3>
+                        <div class="tarif-price">
+                            <span class="amount">5 500$</span>
+                        </div>
+                    </div>
+                    <ul class="tarif-features">
+                       <li style="font-weight: 1000;"> Utilisation :</li>
+                        <li><i class="fas fa-check"></i> Congélateur  350L à 600L</li>
+                        <li><i class="fas fa-check"></i> Radio</li>
+                        <li><i class="fas fa-check"></i> Ordinateur</li>
+                        <li><i class="fas fa-check"></i> Eclairages</li>
+                        <li><i class="fas fa-check"></i>  TV de 30" à 100"</li>
+                        <li><i class="fas fa-check"></i> Charge téléphone</li>
+                        <li><i class="fas fa-check"></i> Linge singer</li>
+                        <li><i class="fas fa-check"></i> Fer a répasser</li>
+                        <li><i class="fas fa-check"></i> Rechaud</li>
+                        <li><i class="fas fa-check"></i> Chauffe eau</li>
+                    </ul>
+                    <div class="tarif-cta">
+                        <a href="#footer-links" class="btn btn-outline" style="width: 100%;">
+                            <i class="fas fa-crown"></i>
+                            Opter pour le premium
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/243899815532" 
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Contact WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-tooltip">Demander un devis</div>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SODIESCO<span>SARL</span></h3>
+                    <p>
+                        Leader en installation solaire depuis 2018. 
+                        Plus de 500 installations réalisées avec excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+               
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+33123456789"><i class="fas fa-phone"></i>01 23 45 67 89</a></li>
+                        <li><a href="mailto:contact@solarpro.fr"><i class="fas fa-envelope"></i>contact@solarpro.fr</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>123 Avenue du Soleil<br>75000 Paris</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Solar Pro. Tous droits réservés.</p>
+                <p style="margin-top: 10px;">
+                    SIRET : 123 456 789 00045 • RGE QualiPV : 1234-RGE-5678
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+        <script src="scripts.js" defer></script>
+    
+</body>
+</html>
